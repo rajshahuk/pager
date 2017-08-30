@@ -47,6 +47,7 @@
 		3540AD781F575C0800534845 /* pagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3540AD7C1F575C0800534845 /* pagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pagerUITests.swift; sourceTree = "<group>"; };
 		3540AD7E1F575C0800534845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3540AD8A1F575C6100534845 /* pager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pager.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		3540AD5B1F575C0800534845 /* pager */ = {
 			isa = PBXGroup;
 			children = (
+				3540AD8A1F575C6100534845 /* pager.entitlements */,
 				3540AD5C1F575C0800534845 /* AppDelegate.swift */,
 				3540AD5E1F575C0800534845 /* ViewController.swift */,
 				3540AD601F575C0800534845 /* Main.storyboard */,
@@ -195,6 +197,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = XKG94W6666;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					3540AD6C1F575C0800534845 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -417,8 +424,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = pager/pager.entitlements;
 				DEVELOPMENT_TEAM = XKG94W6666;
 				INFOPLIST_FILE = pager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.12nines.pager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,8 +439,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = pager/pager.entitlements;
 				DEVELOPMENT_TEAM = XKG94W6666;
 				INFOPLIST_FILE = pager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.12nines.pager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +527,7 @@
 				3540AD831F575C0800534845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3540AD841F575C0800534845 /* Build configuration list for PBXNativeTarget "pagerTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +536,7 @@
 				3540AD861F575C0800534845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3540AD871F575C0800534845 /* Build configuration list for PBXNativeTarget "pagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +545,7 @@
 				3540AD891F575C0800534845 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
